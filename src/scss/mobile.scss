@@ -1,0 +1,57 @@
+@media only screen and (max-width: 80em) {
+  .details {
+    padding: 2.6rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+}
+@media only screen and (max-width: 68em) {
+  .details {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    justify-content: flex-start;
+  }
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  span {
+    margin-bottom: 0;
+  }
+
+  .details {
+    grid-template-columns: 1fr;
+    width: calc(100% - 6rem);
+  }
+
+  .detail {
+    &__box {
+      margin: 0;
+      padding: 0;
+
+      text-align: center;
+
+      &:not(:last-child) {
+        padding-right: 0rem;
+        margin-bottom: 1.4rem;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 25em) and (max-height: 50em) {
+  .details {
+    top: 120%;
+  }
+}
